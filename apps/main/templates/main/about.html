@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% block title %} about - Vmcapital {% endblock %} 
+
+{% block extra_css %}
+  <!-- Link About Us page specific CSS -->
+  <link rel="stylesheet" href="{% static 'main/css/about.css' %}">
+{% endblock %}
+
+<!-- About Us Page Content -->
+{% block content %}
+<section class="bg-light py-5">
+  <div class="container">
+    <h1 class="mb-4 text-center">About Forex Learning</h1>
+    <p class="lead text-center">
+      Empowering individuals with the knowledge and tools to master forex
+      trading.
+    </p>
+    <hr class="my-4" />
+
+    <!-- Introduction -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h2>Who We Are</h2>
+        <p>
+          Forex Learning is your trusted partner in navigating the world of
+          forex trading. We are committed to providing a comprehensive learning
+          experience that blends practical tools with theoretical insights.
+        </p>
+        <p>
+          Our platform is built on a foundation of trust, expertise, and a
+          passion for empowering individuals to achieve financial freedom.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img
+          src="{% static 'main/images/about_us.jpg' %}"
+          alt="Forex Learning"
+          class="img-fluid rounded"
+        />
+      </div>
+    </div>
+
+    <!-- Mission and Vision -->
+    <div class="row text-center py-4 bg-white rounded shadow">
+      <div class="col-md-6">
+        <h3>Our Mission</h3>
+        <p>
+          To provide world-class forex education and resources that inspire and
+          enable our users to achieve financial independence and stability.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <h3>Our Vision</h3>
+        <p>
+          To become the global leader in forex trading education, fostering a
+          community of successful, confident traders.
+        </p>
+      </div>
+    </div>
+
+    <!-- Core Values -->
+    <div class="mt-5">
+      <h2 class="text-center mb-4">Our Core Values</h2>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <i class="bi bi-mortarboard fs-1 text-primary mb-3"></i>
+          <h5>Education</h5>
+          <p>
+            Knowledge is power. We are dedicated to providing reliable and
+            accessible education.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <i class="bi bi-handshake fs-1 text-success mb-3"></i>
+          <h5>Integrity</h5>
+          <p>
+            We prioritize transparency, honesty, and ethical practices in all we
+            do.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <i class="bi bi-graph-up fs-1 text-danger mb-3"></i>
+          <h5>Growth</h5>
+          <p>
+            We help our users grow not just financially but also personally and
+            professionally.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="py-5 bg-light mt-5">
+      <h2 class="text-center mb-4">What Our Learners Say</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p>
+              "Forex Learning transformed the way I approach trading. Their
+              courses are top-notch!"
+            </p>
+            <footer class="blockquote-footer">Jane Doe</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p>
+              "Thanks to Forex Learning, I am now a confident trader making
+              consistent profits."
+            </p>
+            <footer class="blockquote-footer">John Smith</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p>
+              "Their resources and support are unmatched. Highly recommend!"
+            </p>
+            <footer class="blockquote-footer">Sarah Lee</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center py-5">
+      <h2 class="mb-4">Ready to Explore Forex Trading?</h2>
+      <p class="lead">
+        Dive into our wealth of resources, connect with our team, or explore our
+        educational materials to kickstart your trading journey.
+      </p>
+      <a href="{% url 'terms' %}" class="btn btn-primary btn-lg"
+        >Explore Resources</a
+      >
+      <a href="{% url 'contact' %}" class="btn btn-outline-secondary btn-lg"
+        >Contact Us</a
+      >
+    </div>
+  </div>
+</section>
+{% endblock %}

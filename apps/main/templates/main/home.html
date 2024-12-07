@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Home - Vmcapital
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section text-center p-5 bg-primary text-white">
+    <div class="container">
+        <h1 class="display-4 font-weight-bold">Welcome to Vmcapital</h1>
+        <p class="lead">Your One-Stop Destination for Forex Learning and Expert Insights</p>
+        <a href="{% url 'about' %}" class="btn btn-light btn-lg">Learn More</a>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section class="about-us py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">About Vmcapital</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>At Vmcapital, we believe in empowering individuals to succeed in the world of forex trading. Our platform provides expert-led courses, resources, and a thriving community of traders to help you achieve your trading goals. Whether you're just starting or you're an experienced trader, we have something for you.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'main/images/about_us.jpg' %}" alt="About Vmcapital" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Courses Section -->
+<section class="featured-courses bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Featured Forex Courses</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'main/images/about_us.jpg' %}" class="card-img-top" alt="Course 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Beginner Forex Trading</h5>
+                        <p class="card-text">Learn the basics of forex trading, from terminology to strategy, designed for complete beginners.</p>
+                        <a href="{% url 'terms' %}" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'main/images/about_us.jpg' %}" class="card-img-top" alt="Course 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Advanced Forex Strategies</h5>
+                        <p class="card-text">Master advanced strategies like risk management, chart analysis, and market predictions for experienced traders.</p>
+                        <a href="{% url 'terms' %}" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'main/images/about_us.jpg' %}" class="card-img-top" alt="Course 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Forex Trading for Professionals</h5>
+                        <p class="card-text">A comprehensive course designed for traders looking to enhance their professional forex trading skills.</p>
+                        <a href="{% url 'terms' %}" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">What Our Students Say</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <p>"Vmcapital provided me with the skills I needed to get started in forex trading. The lessons were clear and the instructors were incredibly helpful!"</p>
+                    <p class="text-right"><strong>- John Doe</strong></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <p>"I’ve been trading for a few years, but the advanced strategies I learned here helped me improve my profitability significantly!"</p>
+                    <p class="text-right"><strong>- Jane Smith</strong></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <p>"The community support is incredible. I feel like I have a network of experienced traders who are always willing to help!"</p>
+                    <p class="text-right"><strong>- Alice Johnson</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Resources Section -->
+<section class="resources bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Learning Resources</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="resource-card">
+                    <h5>Forex Glossary</h5>
+                    <p>Access a comprehensive glossary of forex terms to help you understand the language of the market.</p>
+                    <a href="{% url 'about' %}" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="resource-card">
+                    <h5>Trading Guides</h5>
+                    <p>Our step-by-step trading guides will take you from a beginner to a pro in no time.</p>
+                    <a href="{% url 'about' %}" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="resource-card">
+                    <h5>Forex Market News</h5>
+                    <p>Stay up-to-date with the latest market news and trends to make informed trading decisions.</p>
+                    <a href="{% url 'about' %}" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta py-5 bg-primary text-white">
+    <div class="container text-center">
+        <h2 class="mb-4">Ready to Start Your Forex Journey?</h2>
+        <p class="lead mb-4">Join us today and unlock the potential of forex trading with expert guidance and resources.</p>
+        <a href="{% url 'terms' %}" class="btn btn-light btn-lg">Get Started</a>
+    </div>
+</section>
+
+{% endblock %}

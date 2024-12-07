@@ -1,0 +1,36 @@
+/* Custom CSS for Hero Section */
+.hero-section {
+    background: url('/static/main/images/hero-background.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    color: #f8f9fa;
+}
+
+.features-section {
+    background-color: #f8f9fa;
+}
+
+.features-section h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.features-section .col-md-4 {
+    margin-bottom: 30px;
+}
+
+.features-section .col-md-4 h5 {
+    font-size: 1.2rem;
+    color: #5a5a5a;
+}
+
+/* Add other custom styles below */

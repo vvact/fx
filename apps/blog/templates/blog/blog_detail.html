@@ -1,0 +1,17 @@
+<!-- blog/templates/blog/blog_detail.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center">{{ post.title }}</h1>
+    {% if post.image %}
+    <img src="{{ post.image.url }}" class="img-fluid my-4" alt="{{ post.title }}">
+    {% endif %}
+    <p><strong>Author:</strong> {{ post.author }}</p>
+    <p><strong>Published on:</strong> {{ post.created_at|date:"F j, Y" }}</p>
+    <hr>
+    <div>
+        {{ post.content|linebreaks }}
+    </div>
+</div>
+{% endblock %}
